@@ -1,7 +1,5 @@
 # SplaveFerris ZMK Configuration
 
-This repository contains a configuration for the [BiggieSplays](https://github.com/jusdisgi/SplaveFerris) keyboard to allow users to build firmware. This particular config includes the SplaveFerris shield definition directly; you may wish instead to use the shield module instead by adding the module to the west.yml found in your zmk-config's config directory. The module is housed at https://github.com/jusdisgi/zmk-keyboards-splaveferris and there is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules)
-
-To use this config directly (not recommended unless you are me) you can use the git actions which have already been setup. Just make whatever changes you like, push them, and go download the artifact from the actions page and flash it.
+This repository contains a configuration for the [BiggieSplays](https://github.com/jusdisgi/BiggieSplays) keyboard to allow users to build firmware. This config leverages the zmk-keyboards-biggiesplays module for board/shield definitions; if you wish to look at or edit the shield you'll find that repo [here](https://github.com/jusdisgi/zmk-keyboards-biggiesplays) but you don't need it to use this config.
 
 Have A Lot of Fun!
