@@ -1,8 +1,8 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -248,7 +248,7 @@
             &kp TAB    &kp LCMD   &kp LCTRL  &kp LSHFT  &kp LCMD   &none          &msc SCRL_UP  &kp HOME   &kp UP    &kp END    &kp PG_UP  &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│  ESC     │KELTICKNOT│ CONTROL  │  SHIFT   │KELTICKNOT│          |     │SCROLL DN │  LEFT    │  DOWN    │  RIGHT   │PAGE DOWN │  ' "     |
-            &kp ESC    &kp LCMD   &kp LCTRL  &kp LSHFT  &kp LCMD   &none          &msc SCRL_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN  &kp SQT
+            &kp ESC    &kp LCMD   &kp LCTRL  &kp LSHFT  &kp LCMD   &none        &msc SCRL_DOWN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN  &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│  SHIFT   │ FUNLAYER │          │          │          │          |     │  ALT     │  INSERT  │  DOWN    │  HOME    │          │ SHIFT    |
            &kp LSHFT   &mo 4      &none      &none      &none      &none            &kp RALT   &kp INS    &kp DOWN   &kp HOME   &none      &kp RSHFT
@@ -292,7 +292,7 @@
             &kp TAB    &kp LCMD   &kp LCTRL  &kp LSHFT  &mo 2      &none          &msc SCRL_UP &kp HOME   &kp UP     &kp END    &kp PG_UP  &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│  ESC     │KELTICKNOT│ CONTROL  │  SHIFT   │KELTICKNOT│          |     │SCROLL DN │  LEFT    │  DOWN    │  RIGHT   │PAGE DOWN │  ' "     |
-            &kp ESC    &kp LCMD   &kp LCTRL  &kp LSHFT  &kp LCMD   &none          &msc SCRL_DN &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN  &kp SQT
+            &kp ESC    &kp LCMD   &kp LCTRL  &kp LSHFT  &kp LCMD   &none          &msc SCRL_DOWN &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN  &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│  SHIFT   │ FUNLAYER │          │          │          │          |     │  ALT     │  INSERT  │  DOWN    │  HOME    │ FUNLAYER │ SHIFT    |
            &kp LSHFT   &none     &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)        &kp RALT   &kp INS    &kp DOWN   &kp HOME   &none      &kp RSHFT
