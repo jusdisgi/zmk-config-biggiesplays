@@ -1,6 +1,9 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -292,7 +295,7 @@
             &kp ESC    &kp LCMD   &kp LCTRL  &kp LSHFT  &kp LCMD   &none          &msc SCRL_DN &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN  &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│  SHIFT   │ FUNLAYER │          │          │          │          |     │  ALT     │  INSERT  │  DOWN    │  HOME    │ FUNLAYER │ SHIFT    |
-           &kp LSHFT   &none       &none      &none      &none      &none           &kp RALT   &kp INS    &kp DOWN   &kp HOME   &none      &kp RSHFT
+           &kp LSHFT   &none     &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)        &kp RALT   &kp INS    &kp DOWN   &kp HOME   &none      &kp RSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //                                 │  {       │  [       │ (        |     │  )       │  ]       │  }       │ 
                                              &kp LBRC  &kp LBKT   &kp LPAR         &kp RPAR    &kp RBKT   &kp RBRC
