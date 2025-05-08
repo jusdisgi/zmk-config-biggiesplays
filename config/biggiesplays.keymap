@@ -209,7 +209,7 @@
             &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G            &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //SHIFT CAPWD│Z FUNLAYER│  X       │  MUTE    │C NUMLAYER│  V       |     B for Britt│N NUMLAYER│  M       │  , <     │  . >     │  / ?     │  
-            &tdcap     &lt 4 Z    &kp X     &kp C_MUTE  &lt 1 C    &kp V            &kp B      &lt 1 N    &kp N      &kp COMMA  &lt 4 DOT  &kp FSLH    
+            &tdcap     &lt 4 Z    &kp X     &kp C_MUTE  &lt 1 C    &kp V            &kp B      &lt 1 N    &kp M      &kp COMMA  &lt 4 DOT  &kp FSLH    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //                                 │  CTRL    │  SPACE   │KELTICKNOT|     │  ENTER   │  SPACE   │ DELETE   │                                   
                                              &kp LCTRL  &kp SPACE  &kp LGUI       &lt 3 ENTER  &kp SPACE  &kp DEL                                      
