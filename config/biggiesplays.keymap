@@ -274,8 +274,8 @@
         //│  SHIFT   │ FUNLAYER │          │          │          │          |     │  ALT         │  INSERT      │  DOWN        │  HOME        │              │  SHIFT       |
            &kp LSHFT   &mo 4      &none      &none      &none      &none            &kp RALT      &kp INS         &kp DOWN       &kp HOME        &none          &kp RSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────┤
-        //                                 │  {       │  [       │ (        |     │  )           │  ]           │  }           │ 
-                                             &kp LBRC  &kp LBKT   &kp LPAR         &kp RPAR    &kp RBKT   &kp RBRC
+        //                                 │ DELETE   │  SPACE   │ ENTER    |     │  L-CLICK     │  M-CLICK     │  R-CLICK     │ 
+                                             &kp DEL  &kp SPACE   &kp ENTER          &mkp MB1       &mkp MB3        &mkp MB2             
             >;
         };
 
