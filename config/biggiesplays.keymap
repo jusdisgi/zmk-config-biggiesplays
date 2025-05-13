@@ -208,8 +208,8 @@
         //│  ESC     │  A       │  S       │  D       │  F       │  G       |     │  H       │  J       │  K       │  L       │  ; :     │  ' "     |            
             &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G            &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
-        //SHIFT CAPWD│Z FUNLAYER│  X       │  MUTE    │C NUMLAYER│  V       |     B for Britt│N NUMLAYER│  M       │  , <     │  . >     │  / ?     │  
-            &tdcap     &lt 4 Z    &kp X     &kp C_MUTE  &lt 1 C    &kp V            &kp B      &lt 1 N    &kp M      &kp COMMA  &lt 4 DOT  &kp FSLH    
+        //SHIFT CAPWD│Z FUNLAYER│  X       │  MEDIA   │C NUMLAYER│  V       |     B for Britt│N NUMLAYER│ M MEDIA  │  , <     │  . >     │  / ?     │  
+            &tdcap     &lt 4 Z    &kp X      &mo 5      &lt 1 C    &kp V            &kp B      &lt 1 N    &lt 5 M    &kp COMMA  &lt 4 DOT  &kp FSLH    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //                                 │  CTRL    │  SPACE   │KELTICKNOT|     │  ENTER   │  SPACE   │ DELETE   │                                   
                                              &kp LCTRL  &kp SPACE  &kp LGUI       &lt 3 ENTER  &kp SPACE  &kp DEL                                      
@@ -226,11 +226,11 @@
         //│  TAB     |          │          │MOUSELAYER│ NAVLAYER │SCREENFILE│     │  / ?     │  4 $ NAV │ 5 % MOUSE│  6 ^     │  - _     │BACKSPACE |  
             &kp TAB    &trans     &trans      &mo 3     &mo 2      &scrshtf         &kp FSLH   &lt 2 N4   &lt 3 N5   &kp N6     &kp MINUS  &kp BSPC    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
-        //│  ESC     │          │DESKSWAP L│MISSIONCTL│DESKSWAP R│SCREENCOPY|     │  *       │  1 !     │  2 @     │  3 #     │  = +     │  ' "     |            
-            &kp ESC    &trans     &swdeskl   &misctrl   &swdeskr   &scrshtc         &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp EQUAL  &kp SQT     
+        //│  ESC     │          │DESKSWAP L│MISSIONCTL│DESKSWAP R│SCREENCOPY|     │  \ |     │  1 !     │  2 @     │  3 #     │  = +     │  ' "     |            
+            &kp ESC    &trans     &misctrl   &swdeskr   &scrshtc         &kp BSLH   &kp N1     &kp N2     &kp N3     &kp EQUAL  &kp SQT     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
-        //SHIFT/CAPWD│ FUNLAYER │          │  SHIFT   │ NUMLAYER │          |     B for Britt│  0 )     │  0 )     │  . >     │ . > FUN  │  / ?     │  
-            &tdcap     &mo 4      &trans     &kp LSHFT  &none      &trans           &kp B      &kp N0     &kp N0     &kp DOT    &lt 4 DOT  &kp FSLH      
+        //SHIFT/CAPWD│ FUNLAYER │          │  SHIFT   │ NUMLAYER │          |        |       │  0 )     │  0 )     │  . >     │ . > FUN  │  / ?     │  
+            &tdcap     &mo 4      &trans     &kp LSHFT  &none      &trans           &kp PIPE   &kp N0     &kp N0     &kp DOT    &lt 4 DOT  &kp FSLH      
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //                                 │  CTRL    │  SPACE   │KELTICKNOT|     │  ENTER   │  SPACE   │ DELETE   │                                   
                                              &kp LCTRL  &kp SPACE  &kp LGUI       &lt 3 ENTER  &kp SPACE  &kp DEL                                      
@@ -279,7 +279,26 @@
             >;
         };
 
-
+        util_layer {
+            display-name = "UTILITY";
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮     ╭──────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+        //│          │          │          │          │          │          │     │          │              │              │              │              │              |   
+           &none        &none      &none       &none       &none     &none          &none      &none          &none          &none          &none          &none
+        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+        //│          │          │          │          │          │          │     │          │              │              │              │              │               
+           &none        &none      &none       &none       &none     &none          &none      &none          &none          &none          &none          &none
+        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+        //│          │          │          │          │          │          │                │ Britt Work   │ Hunter Work  │              │ Tiny Lappy   │              │
+           &none        &none      &none       &none       &none     &none          &none      &btht 0 0      &btht 1 1      &btht 2 2      &btht 3 3      &btht 4 4
+        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+        //│          │          │          │          │          │          │                │              │ USB/BLE      │              │              │Clear Profile │
+           &none        &none      &none       &none       &none     &none          &none      &none          &out OUT_TOG   &none          &none          &bt BT_CLR
+        //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┴──────────────┴──────────────╯
+                                               &none       &none     &none         &bt BT_PRV  &bt BT_NXT     &none
+        //                                 ╰──────────┴──────────┴──────────╯     ╰──────────┴──────────────┴──────────────╯
+            >;
+        };
 
         fun_layer {
             display-name = "FUNCTION";
@@ -299,6 +318,27 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //                                 │  {       │  [       │ (        |     │  )       │  ]       │  }       │ 
                                              &kp LBRC  &kp LBKT   &kp LPAR         &kp RPAR    &kp RBKT   &kp RBRC
+            >;
+        };
+
+        media_layer {
+            display-name = "MEDIA";
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮     ╭──────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+        //│          │          │          │          │          │          │     │          │              │ MISSION CTRL │              │ BRIGHTNESS - │ BRIGHTNESS + |   
+           &none        &none      &none       &none       &none     &none          &none      &none          &misctrl          &none        &C_BRI_DN     &kp C_BRI_UP
+        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+        //│          │          │          │          │          │          │     │          │ LEFT ARROW   │   VOLUME +   │ RIGHT ARROW  │              │               
+           &none        &none      &none       &none       &none     &none          &none      &kp LEFT       &kp C_VOL_UP   &kp RIGHT          &none          &none
+        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+        //│          │          │          │          │          │          │                │SCREEN SWAP L │   VOLUME -   │SCREEN SWAP R │              │              │
+           &none        &none      &none       &none       &none     &none          &none      &swdeskl       &kp C_VOL_DN     &swdeskl      &none         &none 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+        //│          │          │          │          │          │          │                │              │ MUTE         │              │              │              │
+           &none        &none      &none       &none       &none     &none          &none      &none          &kp C_MUTE   &none          &none            &none
+        //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┴──────────────┴──────────────╯
+                                               &none       &none     &none         &kp ENTER   &kp SPACE      &none
+        //                                 ╰──────────┴──────────┴──────────╯     ╰──────────┴──────────────┴──────────────╯
             >;
         };
 
