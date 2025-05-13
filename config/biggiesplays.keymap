@@ -326,13 +326,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮     ╭──────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
         //│          │          │          │          │          │          │     │          │              │ MISSION CTRL │              │ BRIGHTNESS - │ BRIGHTNESS + |   
-           &none        &none      &none       &none       &none     &none          &none      &none          &misctrl          &none        &C_BRI_DN     &kp C_BRI_UP
+           &none        &none      &none       &none       &none     &none          &none      &none          &misctrl          &none       &kp C_BRI_DN   &kp C_BRI_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
         //│          │          │          │          │          │          │     │          │ LEFT ARROW   │   VOLUME +   │ RIGHT ARROW  │              │               
            &none        &none      &none       &none       &none     &none          &none      &kp LEFT       &kp C_VOL_UP   &kp RIGHT          &none          &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
         //│          │          │          │          │          │          │                │SCREEN SWAP L │   VOLUME -   │SCREEN SWAP R │              │              │
-           &none        &none      &none       &none       &none     &none          &none      &swdeskl       &kp C_VOL_DN     &swdeskl      &none         &none 
+           &none        &none      &none       &none       &none     &none          &none      &swdeskl       &kp C_VOL_DN     &swdeskr      &none         &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤     ├──────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
         //│          │          │          │          │          │          │                │              │ MUTE         │              │              │              │
            &none        &none      &none       &none       &none     &none          &none      &none          &kp C_MUTE   &none          &none            &none
