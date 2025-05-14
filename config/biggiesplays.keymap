@@ -199,11 +199,11 @@
             display-name = "QWERTY";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮     ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮  
-        //│  ` ~     |  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │     │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │  - _    |  
-            &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5            &kp N6    &kp N7     &kp N8     &kp N9      &kp N0    &kp MINUS    
+        //│  ` ~     |  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │     │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │BACKSPACE |  
+            &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5            &kp N6    &kp N7     &kp N8     &kp N9      &kp N0    &kp BSPC    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
-        //│  TAB     |  Q       │  W       │E MOUSLAYR│R NAVLAYER│  T       │     │  Y       │U NAVLAYER│I MOUSLAYR│  O       │  P       │BACKSPACE |  
-            &kp TAB    &kp Q      &kp W      &lt 3 E    &lt 2 R    &kp T            &kp Y      &lt 2 U    &lt 3 I    &kp O      &kp P      &kp BSPC    
+        //│  TAB     |  Q       │  W       │E MOUSLAYR│R NAVLAYER│  T       │     │  Y       │U NAVLAYER│I MOUSLAYR│  O       │  P       │ - _      |  
+            &kp TAB    &kp Q      &kp W      &lt 3 E    &lt 2 R    &kp T            &kp Y      &lt 2 U    &lt 3 I    &kp O      &kp P      &kp MINUS    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //│  ESC     │  A       │  S       │  D       │  F       │  G       |     │  H       │  J       │  K       │  L       │  ; :     │  ' "     |            
             &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G            &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT     
@@ -211,8 +211,8 @@
         //SHIFT CAPWD│Z FUNLAYER│  X       │  MEDIA   │C NUMLAYER│  V       |     B for Britt│N NUMLAYER│ M MEDIA  │  , <     │  . >     │  / ?     │  
             &tdcap     &lt 4 Z    &kp X      &mo 5      &lt 1 C    &kp V            &kp B      &lt 1 N    &lt 5 M    &kp COMMA  &lt 4 DOT  &kp FSLH    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
-        //                                 │  CTRL    │  SPACE   │KELTICKNOT|     │  ENTER   │  SPACE   │ DELETE   │                                   
-                                             &kp LCTRL  &kp SPACE  &kp LGUI       &lt 3 ENTER  &kp SPACE  &kp DEL                                      
+        //                                 │  SPACE   │KELTICKNOT│  CTRL    |     │  DELETE  │  ENTER   │ SPACE    │                                   
+                                            &kp SPACE   &kp LGUI  &kp LCTRL        &lt 3 DEL  &kp ENTER   &kp SPACE                                       
             >;
         };
 
@@ -220,11 +220,11 @@
             display-name = "NUMBER";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮     ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮    
-        //│  = +     |  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │     │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │  - _     |  
-           &kp EQUAL   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS    
+        //│  = +     |  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │     │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │BACKSPACE |  
+           &kp EQUAL   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
-        //│  TAB     |          │          │MOUSELAYER│ NAVLAYER │SCREENFILE│     │  / ?     │  4 $ NAV │ 5 % MOUSE│  6 ^     │  - _     │BACKSPACE |  
-            &kp TAB    &trans     &trans      &mo 3     &mo 2      &scrshtf         &kp FSLH   &lt 2 N4   &lt 3 N5   &kp N6     &kp MINUS  &kp BSPC    
+        //│  TAB     |          │          │MOUSELAYER│ NAVLAYER │SCREENFILE│     │  / ?     │  4 $ NAV │ 5 % MOUSE│  6 ^     │  - _     │ - _      |  
+            &kp TAB    &trans     &trans      &mo 3     &mo 2      &scrshtf         &kp FSLH   &lt 2 N4   &lt 3 N5   &kp N6     &kp MINUS  &kp MINUS    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //│  ESC     │          │DESKSWAP L│MISSIONCTL│DESKSWAP R│SCREENCOPY|     │  \ |     │  1 !     │  2 @     │  3 #     │  = +     │  ' "     |            
             &kp ESC    &trans     &misctrl   &swdeskr   &scrshtc         &kp BSLH   &kp N1     &kp N2     &kp N3     &kp EQUAL  &kp SQT     
@@ -232,8 +232,8 @@
         //SHIFT/CAPWD│ FUNLAYER │          │  SHIFT   │ NUMLAYER │          |        |       │  0 )     │  0 )     │  . >     │ . > FUN  │  / ?     │  
             &tdcap     &mo 4      &trans     &kp LSHFT  &none      &trans           &kp PIPE   &kp N0     &kp N0     &kp DOT    &lt 4 DOT  &kp FSLH      
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
-        //                                 │  CTRL    │  SPACE   │KELTICKNOT|     │  ENTER   │  SPACE   │ DELETE   │                                   
-                                             &kp LCTRL  &kp SPACE  &kp LGUI       &lt 3 ENTER  &kp SPACE  &kp DEL                                      
+        //                                 │  SPACE   │KELTICKNOT│  CTRL    |     │  DELETE  │  ENTER   │ SPACE    │                                   
+                                            &kp SPACE   &kp LGUI  &kp LCTRL        &lt 3 DEL  &kp ENTER   &kp SPACE                                    
             >;
         };
 
