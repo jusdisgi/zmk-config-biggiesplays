@@ -227,7 +227,7 @@
             &kp TAB    &trans     &trans      &mo 3     &mo 2      &scrshtf         &kp FSLH   &lt 2 N4   &lt 3 N5   &kp N6     &kp MINUS  &kp MINUS    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //│  ESC     │          │DESKSWAP L│MISSIONCTL│DESKSWAP R│SCREENCOPY|     │  \ |     │  1 !     │  2 @     │  3 #     │  = +     │  ' "     |            
-            &kp ESC    &trans     &misctrl   &swdeskr   &scrshtc         &kp BSLH   &kp N1     &kp N2     &kp N3     &kp EQUAL  &kp SQT     
+            &kp ESC    &trans    &swdeskl   &misctrl   &swdeskr   &scrshtc         &kp BSLH   &kp N1     &kp N2     &kp N3     &kp EQUAL  &kp SQT     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤     ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤  
         //SHIFT/CAPWD│ FUNLAYER │          │  SHIFT   │ NUMLAYER │          |        |       │  0 )     │  0 )     │  . >     │ . > FUN  │  / ?     │  
             &tdcap     &mo 4      &trans     &kp LSHFT  &none      &trans           &kp PIPE   &kp N0     &kp N0     &kp DOT    &lt 4 DOT  &kp FSLH      
